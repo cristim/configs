@@ -31,9 +31,9 @@ then
 fi
 
 # Set default editor
-if [[ -x $(which emacs) ]]
+if [[ -x $(which vim) ]]
 then
-    export EDITOR="emacs"
+    export EDITOR="vim"
     export USE_EDITOR=$EDITOR
     export VISUAL=$EDITOR
 fi
@@ -96,7 +96,7 @@ alias 'j=jobs -l'
 alias 'kw=kwrite'
 alias 'tf=tail -f'
 alias 'grep=grep --colour'
-alias 'e=emacs -nw --quick'
+alias 'e=vim'
 alias 'vnice=nice -n 20 ionice -c 3'
 alias 'get_iplayer=get_iplayer --nopurge'
 alias "tree=tree -A -I 'CVS|*~'"
@@ -423,3 +423,6 @@ fi
 # Get round annoyance in Gentoo
 # (No idea if this is needed any more)
 source $HOME/.zshenv
+source $HOME/.zsh_local_aliases
+
+
